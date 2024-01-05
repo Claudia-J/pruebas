@@ -4,29 +4,29 @@ let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}`;
 let mostrar_noticias = document.getElementById('noticias');
 var div_noticias = document.getElementById('noticia');
 
-    fetch(utl)
-        .then((resp) => resp.json())
-        .then(dato => {
-            console.log(dato);
-            let noticias = dato.articles;
+fetch(url)
+    .then((resp) => resp.json())
+    .then(dato => {
+        console.log(dato);
+        let noticias = dato.articles;
 
-            if(noticias){
-                noticias.map(function(numero){
-                    div_noticias.innerHTML = `<br>
+        if (noticias) {
+            noticias.map(function (numero) {
+                div_noticias.innerHTML = `<br>
                     <img style = "max-width:650px ; text-align: center" src = ${numero.urlToImage}><br>
                     <h1 style = "text-align: center">${numero.title}</h1><br>
                     <h2 style = "text-align: center">${numero.description}</h2><br>
                     <h3 style = "text-align: center">${numero.url}</h3><br>`;
 
-                    mostrar_noticias.appendChild(div_noticias);
-                });
-            }else{
-                console.error("No hay artículos en la API")
-            }
-        })
-        .catch(error => {
-            console.error("Error al obtener datos de la API: ", error);
-        });
+                mostrar_noticias.appendChild(div_noticias);
+            });
+        } else {
+            console.error("No hay artículos en la API")
+        }
+    })
+    .catch(error => {
+        console.error("Error al obtener datos de la API: ", error);
+    });
 
 
 
