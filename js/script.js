@@ -7,7 +7,12 @@ var div_noticias = document.getElementById('noticia');
 fetch(url)
     .then((resp) => resp.json())
     .then(dato => {
-        console.log(dato);
+        console.log("Respuesta de la API;", dato);
+
+        if(dato.status != "ok"){
+            console.error("Error en la respuesta de la API:, ", dato.message);
+        }
+        
         let noticias = dato.articles;
 
         if (noticias) {
