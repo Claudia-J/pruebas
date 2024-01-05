@@ -4,7 +4,7 @@ let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}`;
 let mostrar_noticias = document.getElementById('noticias');
 var div_noticias = document.getElementById('noticia');
 
-    fetch(utl)
+    fetch(url)
         .then((resp) => resp.json())
         .then(dato => {
             console.log(dato);
