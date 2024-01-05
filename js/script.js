@@ -12,7 +12,7 @@ fetch(url)
         if(dato.status != "ok"){
             console.error("Error en la respuesta de la API:, ", dato.message);
         }
-        
+
         let noticias = dato.articles;
 
         if (noticias) {

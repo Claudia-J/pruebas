@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Nikhil Gupta: India Supreme Court rejects plea from US murder plot accused",
+            "description": "A family member of Nikhil Gupta had asked the Indian Supreme Court to intervene in his case.",
+            "url": "https://www.bbc.co.uk/news/world-asia-india-67879258",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/68B0/production/_132200862_gettyimages-1686448739.jpg",
+            "publishedAt": "2024-01-04T11:37:11.9511095Z",
+            "content": "India's Supreme Court has said that it will not intervene in the case of an Indian man accused of conspiring to kill a Sikh separatist on US soil. \r\nUS prosecutors have charged Nikhil Gupta with tryi… [+3092 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "'Oh my god!' Watch moment boy beats Tetris",
+            "description": "Willis Gibson, 13, falls back in his chair in shock as he apparently becomes the first to beat the game.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67879712",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/A816/production/_132203034_p0h2yx3y.jpg",
+            "publishedAt": "2024-01-04T11:07:16.4513445Z",
+            "content": "'Oh my god!' Watch moment boy beats Tetris. Video, 00:00:33'Oh my god!' Watch moment boy beats Tetris"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Crown Princess Mary: Australia celebrates an unexpected Queen",
+            "description": "Mary met Prince Frederik by chance in a Sydney bar - now she's about to become Queen of Denmark.",
+            "url": "https://www.bbc.co.uk/news/world-australia-67860144",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/130D7/production/_132193087_gettyimages-137005002.jpg",
+            "publishedAt": "2024-01-04T09:37:13.8894931Z",
+            "content": "When the world's last reigning Queen announced her surprise abdication on live TV, history was also made in a country far, far away.\r\n\"I will hand over the throne to my son Crown Prince Frederik,\" Ma… [+5220 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Japan jet crash: Airline pilots initially unaware of cabin fire",
+            "description": "It was a flight attendant who informed the cockpit of the cabin fire, said a spokesperson.",
+            "url": "https://www.bbc.co.uk/news/world-asia-67879308",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/006E/production/_132201100_091814cd8ba978c9ee51d38aae93e64e2399133c-1.jpg",
+            "publishedAt": "2024-01-04T09:07:19.8266576Z",
+            "content": "Pilots of a Japanese airliner that collided with a smaller plane at Tokyo Haneda Airport were initially unaware that their jet was on fire.\r\nIt was a flight attendant who informed the cockpit of the … [+3003 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Israel Gaza war: Hezbollah says four killed in cross-border fighting with Israel",
+            "description": "The Israeli military says it attacked a \"terrorist cell\" in Lebanon, amid fears of regional war.",
+            "url": "https://www.bbc.co.uk/news/live/world-middle-east-67879726",
+            "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
+            "publishedAt": "2024-01-04T09:07:19.3736433Z",
+            "content": "Hello, you join us as we restart our live coverage of the war between Israel and Hamas in Gaza - and how it's affecting the wider Middle East region. To get things going, here's a quick rundown of wh… [+1571 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "New Jersey imam shot and killed outside his mosque",
+            "description": "Officials believe the killing of Imam Hassan Sharif was not motivated by domestic terrorism or bias.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67878896",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13308/production/_132200687_gettyimages-1898122660-1.jpg",
+            "publishedAt": "2024-01-04T07:52:16.8896499Z",
+            "content": "The imam of a mosque in Newark, New Jersey, was shot and killed early on Wednesday morning by an unknown attacker who remains at large. \r\nAuthorities said in a news conference that they believe the k… [+2340 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Man leaps over US courtroom bench to attack judge",
+            "description": "Security footage shows a man charging at a judge, sparking a brawl in a Nevada courtroom.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67879499",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/D35E/production/_132201145_p0h2xbgf.jpg",
+            "publishedAt": "2024-01-04T05:37:11.5141234Z",
+            "content": "Security footage shows a man charging at a judge in a Nevada courtroom. \r\nAccording to a statement, Judge Mary Kay Holthus experienced some injuries after she fell back from her seat. \r\nA court marsh… [+183 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Jeffrey Epstein: US court releases list of people connected to financier",
+            "description": "The disgraced millionaire mixed with figures from the worlds of politics, business and royalty.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67865190",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C7E8/production/_130067115_epstein-index-reuters.jpg",
+            "publishedAt": "2024-01-04T00:07:15.4611031Z",
+            "content": "A US court has released a list of people connected to the financier and sex offender Jeffrey Epstein.\r\nSome of those named are accused of wrongdoing, while others on the list - which was expected to … [+876 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "A restless Gen Z is reshaping the Chinese Dream",
+            "description": "Millions of young Chinese face an uncertain future in the world's second-largest economy.",
+            "url": "https://www.bbc.co.uk/news/world-asia-china-67779222",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/D3CA/production/_132181245_dscf9459.jpg",
+            "publishedAt": "2024-01-03T23:52:19.0447815Z",
+            "content": "\"I've had one, two, three, four... five jobs in the last few months,\" says Joy Zhang, a 23-year-old graduate. \r\nShe counts them on her fingers as she walks through a line of stalls at a local food ma… [+10122 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC Sport",
+            "title": "Luke Humphries beats Luke Littler to win PDC World Darts Championship",
+            "description": "England's Luke Humphries beats 16-year-old Luke Littler in a gripping final at Alexandra Palace to win his first PDC World Championship title.",
+            "url": "https://www.bbc.co.uk/sport/darts/67875251",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/47E0/production/_132200481_humphries_getty.jpg",
+            "publishedAt": "2024-01-03T22:37:11.6550461Z",
+            "content": "England's Luke Humphries defeated teenager Luke Littler 7-4 in a gripping final at Alexandra Palace to win his first PDC World Championship title.\r\nLittler, 16, was aiming to become darts' youngest e… [+710 chars]"
+        }
+    ]
+}
