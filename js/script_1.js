@@ -14,9 +14,9 @@ fetch(url)
 
         let noticias = dato.articles;
 
-        if (noticias) {
+        if(noticias) {
             noticias.map(function (numero) {
-                div_noticias.innerHTML = `<br>
+                div_noticias.innerHTML += `<br>
                     <img style = "max-width:650px ; text-align: center" src = ${numero.urlToImage}><br>
                     <h1 style = "text-align: center">${numero.title}</h1><br>
                     <h2 style = "text-align: center">${numero.description}</h2><br>
