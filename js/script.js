@@ -15,14 +15,15 @@ fetch(url)
 
         let noticias = dato.articles;
 
-        if (noticias) {
+        if(noticias) {
             noticias.map(function (numero) {
-                div_noticias.innerHTML = `<br>
+                let texto = `<br>
                     <img style = "max-width:650px ; text-align: center" src = ${numero.urlToImage}><br>
                     <h1 style = "text-align: center">${numero.title}</h1><br>
                     <h2 style = "text-align: center">${numero.description}</h2><br>
                     <h3 style = "text-align: center">${numero.url}</h3><br>`;
 
+                div_noticias.innerHTML += texto;
                 mostrar_noticias.appendChild(div_noticias);
             });
         } else {
@@ -32,7 +33,6 @@ fetch(url)
     .catch(error => {
         console.error("Error al obtener datos de la API: ", error);
     });
-
 
 
 
