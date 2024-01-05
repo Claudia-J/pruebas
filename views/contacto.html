@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/contacto.css">
+  <script src="https://kit.fontawesome.com/6c267f461d.js" crossorigin="anonymous"></script>
+  <title>Contacto</title>
+ 
+</head>
+<body>
+  <header>
+    <h1>Daily News</h1>
+  </header>
+
+  <div class="navbar">
+    <a href="../index.html">Página de Inicio</a>
+    <a href="../views/galeria.html">Galería</a>
+    <a href="../views/presupuesto.html">Presupuesto</a>
+  </div>  
+  
+  <!-- Contenedor del mapa -->
+  <div>
+    <h2>Ingresa tu ubicación:</h2>
+    <input type="text" id="userLocation" placeholder="Escribe tu ubicación">
+    <button onclick="showLocation()">Mostrar en el mapa</button>
+</div>
+<div id="map"></div>
+
+  <!-- Información del negocio -->
+  <div id="info-negocio">
+    <p><strong>Ciento, C. del Consejo de Ciento, 361, 08009 Barcelona</strong></p>
+    <p><strong>Téfono: 605-256585</strong></p>
+    <p><strong>tudaily_news@gmail.com</strong></p>
+    <p><strong>Todos los derechos reservados, Publicado por Associated Newspapers Ltd 
+      Parte de "the Daily Mail, The Mail on Sunday & Metro Media Group"</strong></p>
+  </div>
+
+  <script>
+    let map;
+    let geocoder;
+    let directionsService;
+    let directionsRenderer;
+    let pointB;  // Coordenadas del punto B
+    let markerB;  // Marcador para el punto B
+
+    function initMap() {
+        // Inicializar el mapa
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 41.38636866674763, lng: 2.172443676034241 },
+            zoom: 8
+        });
+
+        // Inicializar el servicio de geocodificación
+        geocoder = new google.maps.Geocoder();
+
+        // Inicializar el servicio de direcciones
+        directionsService = new google.maps.DirectionsService();
+        directionsRenderer = new google.maps.DirectionsRenderer();
+        directionsRenderer.setMap(map);
+    }
+
+    function showLocation() {
+        // Obtener la ubicación ingresada por el usuario
+        const userInput = document.getElementById('userLocation').value;
+
+        // Convertir la dirección en coordenadas geográficas
+        geocoder.geocode({ 'address': userInput }, function(results, status) {
+            if (status === 'OK') {
+                // Centrar el mapa en la ubicación ingresada
+                map.setCenter(results[0].geometry.location);
+
+                // Agregar un marcador en la ubicación ingresada (punto A)
+                const markerA = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location,
+                    title: userInput
+                });
+
+                // Guardar las coordenadas del punto A
+                const pointA = results[0].geometry.location;
+
+                // Definir las coordenadas del punto B (por ejemplo, la dirección de tu empresa)
+                pointB = new google.maps.LatLng(41.394802940746445, 2.206242995437387);
+
+                // Agregar un marcador en el punto B
+                markerB = new google.maps.Marker({
+                    map: map,
+                    position: pointB,
+                    title: 'Ubicación de la empresa'
+                });
+
+                // Calcular y mostrar la ruta desde A hasta B
+                calculateRoute(pointA, pointB);
+            } else {
+                window.alert('No se pudo encontrar la ubicación: ' + status);
+            }
+        });
+    }
+
+    function calculateRoute(origin, destination) {
+        // Hacer la solicitud de ruta
+        directionsService.route({
+            origin: origin,
+            destination: destination,
+            travelMode: 'DRIVING'
+        }, function(response, status) {
+            if (status === 'OK') {
+                // Mostrar la ruta en el mapa
+                directionsRenderer.setDirections(response);
+            } else {
+                window.alert('No se pudo calcular la ruta: ' + status);
+            }
+        });
+    }
+</script>
+<footer>
+  
+  <div class="navbar">
+    <a href="#redesSociales" class="red_social">
+      <i class="fa-brands fa-x-twitter" style="font-size: 24px;"></i>
+      <i class="fa-brands fa-facebook-f" style="font-size: 24px;"></i>
+      <i class="fa-brands fa-instagram" style="font-size: 24px;"></i></a>
+    <a href="../views/contacto.html">Localizacion</a>
+    
+  </div>
+
+</footer>
+  <!-- Agregar el script de la API de Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJqqNg9O4pa9cFLHTMmrHwC3YHcaF1gh8&callback=initMap" async defer></script>
+</body>
+</html>

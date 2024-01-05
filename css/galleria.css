@@ -1,0 +1,139 @@
+body h1{
+    font-family: cursive;
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+body{
+    /* Establecer la imagen de fondo y configurar la visualización */
+    background: url('../imagenes/imgfond.jpg') repeat center center fixed; 
+    background-size:contain;
+    /* Otros estilos para el contenido de la página */
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    padding: 0;
+    color: #000000;
+}
+
+header h1 {
+    font-size: 85px;
+    font-family: Kenia;
+    color: #333;
+ }
+
+ header {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image: url('../imagenes/fondon-portada.jpg'); 
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el encabezado */
+    background-position: center; /* Centra la imagen en el encabezado */
+    color: #fff; /* Color del texto en el encabezado (puedes ajustar según sea necesario) */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 15px 0; /* Ajusta el relleno superior e inferior según sea necesario */
+ }
+
+/* Estilos para el carrusel */
+#miCarrusel {
+    max-width: 800px; /* Establecer un ancho máximo para el carrusel */
+    margin: auto; /* Centrar el carrusel en la página */
+}
+
+.carousel-inner {
+    border-radius: 10px; /* Agregar esquinas redondeadas al contenedor interno del carrusel */
+    overflow: hidden; /* Ocultar partes de las imágenes que sobresalgan del contenedor */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Ajustar el ancho máximo de las imágenes dentro del carrusel */
+    height: auto; /* Mantener la proporción original de la imagen */
+    border-radius: 10px; /* Agregar esquinas redondeadas a las imágenes */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el nombre de la imagen */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: cursive;
+    text-decoration: none;
+    
+}
+
+/* Ajustar los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ancho de los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px; /* Tamaño de los íconos de los controles */
+    height: 30px;
+}
+
+/* Ajustar el espacio entre los controles y el carrusel */
+.carousel-control-prev {
+    left: -30px;
+}
+
+.carousel-control-next {
+    right: -30px;
+}
+
+ /* Estilo para la barra de navegación */
+ .navbar {
+    background-color: #333; /* Color de fondo */
+    overflow: hidden;
+    
+    text-align: left;
+ }
+ 
+ /* Estilo para los enlaces de la barra de navegación */
+ .navbar a {
+    float: left;
+    display: block;
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 14px 16px; /* Espacio alrededor del texto */
+    text-decoration: underline; /* Quita el subrayado predeterminado */
+    font-family: cursive; /* Tipo de fuente para el texto en la barra */
+ }
+ 
+ /* Cambiar el color de los enlaces cuando el mouse pasa por encima */
+ .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+ 
+ }
+
+ /* Barra de navegación */
+nav {
+    background-color: #444;
+    text-align: center;
+ }
+ 
+ nav ul {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ nav ul li {
+    display: inline;
+    margin: 0 20px;
+ }
+ 
+ nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+ }
+ 
+ @font-face{
+    font-family: 'Kenia';
+    src: url('../funtes/Kenia-Regular.ttf')
+ }
+
+

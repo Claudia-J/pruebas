@@ -1,0 +1,261 @@
+/* Estilo general del cuerpo de la página */
+body {
+   /* Establecer la imagen de fondo y configurar la visualización */
+   background: url('../imagenes/imgfond.jpg') repeat center center fixed; 
+   background-size:contain;
+   /* Otros estilos para el contenido de la página */
+   margin: 0; /* Eliminar el margen predeterminado del body */
+   padding: 0;
+   color: #000000;
+}
+
+/* Encabezado */
+header {
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
+   background-image: url('../imagenes/fondon-portada.jpg'); 
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el encabezado */
+   background-position: center; /* Centra la imagen en el encabezado */
+   color: #fff; /* Color del texto en el encabezado (puedes ajustar según sea necesario) */
+   text-align: center; /* Alinea el texto al centro */
+   padding: 15px 0; /* Ajusta el relleno superior e inferior según sea necesario */
+}
+
+header h1 {
+   font-size: 85px;
+   font-family: Kenia;
+   color: #333;
+}
+
+/* Barra de navegación */
+nav {
+   background-color: #444;
+   text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 20px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+/* Contenido principal */
+section {
+   padding: 20px;
+}
+
+/* Formulario de contacto */
+form {
+   background-color: #fff;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+}
+
+input[type="submit"] {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #555;
+}
+
+/* Galería de imágenes */
+#gallery {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#gallery img {
+   max-width: 100%;
+   height: auto;
+   margin: 10px;
+}
+
+/* Pie de página */
+footer {
+   background: url('/imagenes/imgfond.jpg') repeat center center fixed; 
+   background-size:contain;
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+}
+
+/* Estilos para errores de validación (Puedes personalizarlos más) */
+.error {
+   color: #FF0000;
+   font-size: 14px;
+}
+
+/* Estilos para las noticias en la página de inicio (personaliza según tu estructura de datos) */
+#noticias {
+   background: url('/imagenes/imgfond.jpg') repeat center center fixed; 
+   background-size:contain;
+   padding: 20px;
+}
+
+/* Añade estilos adicionales según tus preferencias y diseño específico */
+
+.gradient-box {
+   width: 93%;
+   height: 50%;
+   background: linear-gradient(45deg, #746e6c, #F5E0A3);
+   padding: 50px;
+   text-align: center;
+   color: black;
+ }
+
+ .box {
+   
+   background-color: gray;
+   border: 1px solid black;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .gradient-box h1 {
+   font-family: cursive;
+ }
+ 
+
+ h3 {
+   font-size: small;
+ }
+
+ /* Estilo para la barra de navegación */
+.navbar {
+   background-color: #333; /* Color de fondo */
+   overflow: hidden;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.navbar a {
+   float: left;
+   display: block;
+   color: white; /* Color del texto */
+   text-align: center;
+   padding: 14px 16px; /* Espacio alrededor del texto */
+   text-decoration: underline; /* Quita el subrayado predeterminado */
+   font-family: cursive; /* Tipo de fuente para el texto en la barra */
+}
+
+/* Cambiar el color de los enlaces cuando el mouse pasa por encima */
+.navbar a:hover {
+   background-color: #ddd;
+   color: black;
+   cursor: pointer;
+
+}
+
+h2{
+   text-align: center;
+   font-family: Playfair;
+   font-size: 35px;
+}
+
+@font-face{
+   font-family: 'Kenia';
+   src: url('../funtes/Kenia-Regular.ttf')
+}
+
+@font-face{
+   font-family: 'Playfair';
+   src: url('../funtes/PlayfairDisplay-Black.ttf')
+}
+
+#comentarios {
+   max-width: 600px;
+   margin: 20px auto;
+}
+
+/* Estilos para la lista de comentarios */
+#comentarios-lista {
+   margin-bottom: 20px;
+}
+
+.comentario {
+   border: 1px solid #ddd;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de comentarios */
+#formulario-comentario {
+   display: flex;
+   flex-direction: column;
+}
+
+#formulario-comentario label,
+#formulario-comentario textarea,
+#formulario-comentario input {
+   margin-bottom: 10px;
+}
+
+#encuestas {
+   max-width: 600px;
+   margin: 20px auto;
+}
+
+#encuestas-contenedor {
+   margin-top: 20px;
+}
+
+#recursos {
+   max-width: 800px;
+   margin: 20px auto;
+}
+
+#lista-recursos {
+   list-style-type: none;
+   padding: 0;
+}
+
+.recurso {
+   border: 1px solid #ddd;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.recurso a {
+   text-decoration: none;
+   color: #000000;
+}
+
+.recurso a:hover {
+   text-decoration: underline;
+}
+

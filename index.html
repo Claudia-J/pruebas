@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link rel="stylesheet" type="text/css" href="./css/ejercicio.css">
+    <script src="https://kit.fontawesome.com/6c267f461d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Daily News</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="./views/galeria.html">Galería</a>
+        <a href="./views/presupuesto.html">Presupuesto</a>
+        <a href="./views/contacto.html">Contacto</a>
+    </div>
+
+    <div class="gradient-box">
+        <div class="box">
+            <section id="noticias">
+                <!-- Aquí cargarás noticias desde un archivo externo JSON o XML utilizando JavaScript -->
+                <h2>Most Relevant News</h2>
+
+                <div id="noticia"></div>
+            </section>
+
+            <section id="comentarios">
+                <h2>Comentarios y Opiniones</h2>
+                <div id="comentarios-lista">
+                    <!-- Aquí se mostrarán los comentarios -->
+                </div>
+
+                <form id="formulario-comentario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" required></textarea>
+
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </section>
+
+            <section id="encuestas">
+                <h2>¿Alguna Pregunta?</h2>
+                <form id="formulario-encuesta">
+                    <label for="pregunta">Pregunta:</label>
+                    <input type="text" id="pregunta" required>
+
+                    <label for="opciones">Opciones (separadas por coma):</label>
+                    <input type="text" id="opciones" required>
+
+                    <button type="button" onclick="crearEncuesta()">Crear Encuesta</button>
+                </form>
+                <div id="encuestas-contenedor">
+                    <!-- Aquí se mostrarán las encuestas y resultados -->
+                </div>
+            </section>
+
+            <section id="recursos">
+                <h2>Asistencia</h2>
+                <div id="recurso">
+                    <ul id="lista-recursos">
+                        <!-- Aquí se mostrarán los recursos -->
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="navbar">
+            <a href="#redesSociales" class="red_social">
+                <i class="fa-brands fa-x-twitter" style="font-size: 24px;"></i>
+                <i class="fa-brands fa-facebook-f" style="font-size: 24px;"></i>
+                <i class="fa-brands fa-instagram" style="font-size: 24px;"></i></a>
+            <a href="./views/contacto.html">Localizacion</a>
+
+
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
