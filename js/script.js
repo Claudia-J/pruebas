@@ -1,7 +1,7 @@
-let key = 'e43a78d88a52423cb6d20642a20efbd1';
-let category = 'sports'
-let url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}`;
-let mostrar_noticias = document.getElementById('noticias');
+var key = 'e43a78d88a52423cb6d20642a20efbd1';
+var category = 'sports'
+var url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}`;
+var mostrar_noticias = document.getElementById('noticias');
 var div_noticias = document.getElementById('noticia');
 
 fetch(url)
